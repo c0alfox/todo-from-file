@@ -1,0 +1,26 @@
+{
+  "name": "todo-from-file",
+  "version": "1.0.0",
+  "description": "This application makes a local server that displays a markdown-like file as a todo-list",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0alfox/todo-from-file.git"
+  },
+  "author": "c0alfox",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/c0alfox/todo-from-file/issues"
+  },
+  "homepage": "https://github.com/c0alfox/todo-from-file#readme",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "chalk": "^5.0.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  }
+}
