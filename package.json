@@ -1,7 +1,7 @@
 {
   "name": "todo-from-file",
   "version": "1.0.0",
-  "description": "This application makes a local server that displays a markdown-like file as a todo-list",
+  "description": "This application makes a local server that displays a todo-list from a markdown-like file",
   "type": "module",
   "main": "index.js",
   "scripts": {
