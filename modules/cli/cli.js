@@ -1,5 +1,3 @@
-#! usr/bin/env node
-
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import arg from 'arg';
@@ -42,6 +40,7 @@ function parseArguments(rawArgs) {
     const args = arg(
         {
             '--port': Number,
+            '--help': Boolean,
 
             '-p': '--port',
         },
@@ -49,6 +48,24 @@ function parseArguments(rawArgs) {
             argv: rawArgs.slice(2),
         }
     );
+
+    if (args['--help']) {
+        console.log(`
+${chalk.bold.cyan("md-todo")}
+${chalk.bold.gray("by c0alfox")}
+
+Usage:
+md-todo [path] [--port / -p] [--help]
+
+Arguments:
+
+path (String / Path): the path to an existing *.md file. If it's not explicitly said in the arguments or if it is invalid it'll be asked once you run the app
+--port / -p (Number): the port to which the local server is going to be opened
+--help: shows this help message
+        `);
+
+        process.exit(0);
+    }
 
     try {
         let validPath = validatePath(args._[0], false);
