@@ -4,6 +4,9 @@
   "description": "This application makes a local server that displays a todo-list from a markdown-like file",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "md-todo": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
