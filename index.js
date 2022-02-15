@@ -4,5 +4,5 @@ import { cli } from './modules/cli/cli.js';
 import { decode } from './modules/decode/decode.js';
 
 let data = await cli(process.argv);
-let data = await decode(data.fileBuffer, data.encoding);
+data = await decode(data.fileBuffer, data.encoding);
 console.log(data);
