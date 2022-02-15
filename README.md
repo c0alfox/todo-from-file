@@ -23,10 +23,10 @@ This application makes a local server that displays a todo-list from a markdown-
 
 todo-from-file is using the following npm packages for the CLI:
 
-- Arg version 5.0.1
-- Chalk version 5.0.0
-- Inquirer version 8.2.0
-- Nanospinner version 1.0.0
+- Arg (^5.0.1)
+- Chalk (^5.0.0)
+- Inquirer (^8.2.0)
+- Nanospinner (^1.0.0)
 
 ## Installation
 
