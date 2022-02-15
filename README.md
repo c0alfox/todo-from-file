@@ -43,12 +43,13 @@ After that you can use the command `md-todo` on your machine!
 
 ## Usage
 
-`md-todo [path] [--port / -p] [--help]`
+`md-todo [path] [--port / -p] [--encoding / -e] [--help]`
 
 Arguments:
 
 - path (String / Path): the path to an existing *.md file. If it's not explicitly said in the arguments or if it is invalid it'll be asked once you run the app
-- --port / -p (Number): the port to which the local server is going to be opened
+- --port / -p (Number - Default: 5000): the port to which the local server is going to be opened
+- --encoding / -e (String - Default: "utf-8"): one of the supported nodejs buffer encoding (read more at: [NodeJS Buffer.toString()](https://nodejs.org/api/buffer.html#buftostringencoding-start-end))
 - --help: shows this help message
 
 ## Status
