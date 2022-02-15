@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 
-import { cli } from './modules/cli/cli.js'
+import { cli } from './modules/cli/cli.js';
+import { decode } from './modules/decode/decode.js';
 
 let data = await cli(process.argv);
-
-console.log(data.toString('utf-8'));
+let data = await decode(data.fileBuffer, data.encoding);
+console.log(data);
